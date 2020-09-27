@@ -1,0 +1,38 @@
+.b-to-t, .t-to-b, .r-to-l, .l-to-r {
+  display: flex;
+  flex-wrap: nowrap;
+  text-align: center;
+}
+.lt.b-to-t, .lt.t-to-b, .lt.r-to-l, .lt.l-to-r {
+  text-align: left;
+}
+.rt.b-to-t, .rt.t-to-b, .rt.r-to-l, .rt.l-to-r {
+  text-align: right;
+}
+.ca.b-to-t, .ca.t-to-b, .ca.r-to-l, .ca.l-to-r {
+  align-items: center;
+}
+.sb.b-to-t, .sb.t-to-b, .sb.r-to-l, .sb.l-to-r {
+  justify-content: space-between;
+}
+.sa.b-to-t, .sa.t-to-b, .sa.r-to-l, .sa.l-to-r {
+  justify-content: space-around;
+}
+
+.l-to-r {
+  flex-direction: row;
+}
+
+.r-to-l {
+  flex-direction: row-reverse;
+}
+
+.t-to-b {
+  flex-direction: column;
+}
+
+.b-to-t {
+  flex-direction: column-reverse;
+}
+
+/*# sourceMappingURL=tblr.css.map */

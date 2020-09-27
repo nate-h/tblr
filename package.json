@@ -1,0 +1,35 @@
+{
+  "name": "tblr",
+  "version": "1.0.0",
+  "description": "Simple css classes to position elements easily and rapidly",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch tblr.scss tblr.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nate-h/tblr.git"
+  },
+  "keywords": [
+    "css",
+    "sass",
+    "scss",
+    "position",
+    "elements",
+    "flex"
+  ],
+  "author": "nate-h",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nate-h/tblr/issues"
+  },
+  "homepage": "https://github.com/nate-h/tblr#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "sass": "^1.26.11"
+  }
+}
