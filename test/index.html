@@ -6,11 +6,58 @@
     <link rel="stylesheet" href="../tblr.css">
 </head>
 <body>
-    These elements should go left to right
+    <h2>Add ".l-to-r" to position elements left to right.</h2>
     <ul class='l-to-r'>
         <li>one</li>
         <li>two</li>
         <li>three</li>
     </ul>
+
+    <h2>Add ".r-to-l" to position elements right to left.</h2>
+    <ul class='r-to-l'>
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+    </ul>
+
+    <h2>Add ".t-to-b" to position elements top to bottom.</h2>
+    <ul class='t-to-b'>
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+    </ul>
+
+    <h2>Add ".b-to-t" to position elements bottom to top.</h2>
+    <ul class='b-to-t'>
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+    </ul>
+
 </body>
+<style>
+    body {
+        width: 600px;
+    }
+
+    ul {
+        display: inline-flex !important;
+        list-style: none;
+        margin: 10px;
+        padding: 0;
+    }
+
+    li {
+        display: inline;
+        padding: 10px;
+    }
+
+    .l-to-r li:first-child {
+        padding-left: 0px;
+    }
+
+    .l-to-r li:last-child {
+        padding-right: 0px;
+    }
+</style>
 </html>
