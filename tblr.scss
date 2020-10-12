@@ -72,6 +72,10 @@
     flex-direction: column-reverse;
 }
 
+// Placeholder selectors
+// Like class selectors but with the additional property that they will not
+// show up in the generated css.
+
 %l-to-r {
     @extend %direction-layouts;
     flex-direction: row;
