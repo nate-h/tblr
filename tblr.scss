@@ -3,94 +3,53 @@
 ////////////////////////////////////////////////////////////////////////
 
 %direction-layouts {
-
     display: flex;
     flex-wrap: nowrap;
     text-align: center;
 
-    // .grow {
-    //     flex-basis: 0;
-    //     flex-grow: 1;
-    //     flex-shrink: 1;
-    // }
-
-    // %equal-growth {
-    //     flex-basis: 0;
-    //     flex-grow: 1;
-    //     flex-shrink: 1;
-    // }
-
-    // &.equal > * {
-    //     flex-basis: 0;
-    //     flex-grow: 1;
-    //     flex-shrink: 1;
-    // }
-
-    // &.equal-growth,
-    // .equal-growth {
-    //     @extend %equal-growth;
-    // }
-
-    &.lt {
+    &%lt {
         text-align: left;
     }
 
-    &.rt {
+    &%rt {
         text-align: right;
     }
 
-    &.ca {
+    &%ca {
+        justify-content: center;
         align-items: center;
     }
 
-    &.sb {
+    &%sb {
         justify-content: space-between;
     }
 
-    &.sa {
+    &%sa {
         justify-content: space-around;
     }
 }
 
-.l-to-r {
-    @extend %direction-layouts;
-    flex-direction: row;
-}
-
-.r-to-l {
-    @extend %direction-layouts;
-    flex-direction: row-reverse;
-}
-
-.t-to-b {
-    @extend %direction-layouts;
-    flex-direction: column;
-}
-
-.b-to-t {
-    @extend %direction-layouts;
-    flex-direction: column-reverse;
-}
-
-// Placeholder selectors
-// Like class selectors but with the additional property that they will not
-// show up in the generated css.
-
+// Left to right positioning.
 %l-to-r {
     @extend %direction-layouts;
+    align-items: center;
     flex-direction: row;
 }
 
+// Right to left positioning.
 %r-to-l {
     @extend %direction-layouts;
+    align-items: center;
     flex-direction: row-reverse;
 }
 
+// Top to bottom positioning.
 %t-to-b {
     @extend %direction-layouts;
     flex-direction: column;
 }
 
+// Bottom to top positioning.
 %b-to-t {
     @extend %direction-layouts;
     flex-direction: column-reverse;
